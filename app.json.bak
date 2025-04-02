@@ -26,12 +26,7 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      [
-        "expo-router",
-        {
-          "appRoot": "src/app"
-        }
-      ]
+      "expo-router"
     ]
   }
 }
