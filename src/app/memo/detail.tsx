@@ -1,7 +1,7 @@
 import { View, Text, ScrollView, StyleSheet } from "react-native"
 
 import Header from "../../components/Header"
-import CircleButtom from "../../components/CircleButtom"
+import CircleButton from "../../components/CircleButton"
 import Icon from "../../components/Icon"
 
 const Detail = ():JSX.Element => {
@@ -19,9 +19,9 @@ const Detail = ():JSX.Element => {
                     本文用なので使い方を間違えると不自然に見えることがあるので要注意。
                 </Text>
             </ScrollView>
-            <CircleButtom style={{ top: 160, bottom: "auto" }}>
+            <CircleButton style={{ top: 160, bottom: "auto" }}>
                 <Icon name="pencil" size={20} color="#ffffff"/>
-            </CircleButtom>
+            </CircleButton>
         </View>
     )
 }

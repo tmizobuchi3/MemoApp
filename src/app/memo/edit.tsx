@@ -3,7 +3,7 @@ import {
 } from "react-native"
 
 import Header from "../../components/Header"
-import CircleButtom from "../../components/CircleButtom"
+import CircleButton from "../../components/CircleButton"
 import Icon from "../../components/Icon"
 
 const Edit = (): JSX.Element => {
@@ -13,9 +13,9 @@ const Edit = (): JSX.Element => {
             <View style={styles.inputContainer}>
                 <TextInput multiline style={styles.input} value={"買い物\nリスト"} />
             </View>
-            <CircleButtom>
+            <CircleButton>
                 <Icon name="check" size={20} color="#ffffff" />
-            </CircleButtom>
+            </CircleButton>
         </KeyboardAvoidingView>
     )
 }
