@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from "react-native"
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native"
 
 import Header from "../../components/Header"
 import Button from "../../components/Button"
@@ -12,10 +12,12 @@ const SignUp = ():JSX.Element => {
                 <Text style={Styles.title}>Sign Up</Text>
                 <TextInputBox label="Email address" />
                 <TextInputBox label="Password" />
-                <Button label="Submit" />
+                <Button label="Submit"  />
                 <View style={Styles.footer}>
                     <Text style={Styles.footerText}>Already registered?</Text>
-                    <Text style={Styles.footerLink}>Log In</Text>
+                    <TouchableOpacity>
+                        <Text style={Styles.footerLink}>Log In</Text>
+                    </TouchableOpacity>
                 </View>
             </View>
         </View>
