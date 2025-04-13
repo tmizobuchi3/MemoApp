@@ -1,7 +1,8 @@
-import { View, Text, TextInput, StyleSheet } from "react-native"
+import { View, Text, StyleSheet } from "react-native"
 
 import Header from "../../components/Header"
 import Button from "../../components/Button"
+import TextInputBox from "../../components/TextInputBox"
 
 const SignUp = ():JSX.Element => {
     return(
@@ -9,8 +10,8 @@ const SignUp = ():JSX.Element => {
             <Header />
             <View style={Styles.inner}>
                 <Text style={Styles.title}>Sign Up</Text>
-                <TextInput style={Styles.input} value="Email address" />
-                <TextInput style={Styles.input} value="Password" />
+                <TextInputBox label="Email address" />
+                <TextInputBox label="Password" />
                 <Button label="Submit" />
                 <View style={Styles.footer}>
                     <Text style={Styles.footerText}>Already registered?</Text>
@@ -35,16 +36,6 @@ const Styles = StyleSheet.create({
         lineHeight: 32,
         fontWeight: "bold",
         marginBottom: 24
-    },
-    input: {
-        borderWidth: 1,
-        borderColor: "#dddddd" ,
-        backgroundColor: "#ffffff",
-        height: 48,
-        padding: 8,
-        fontSize: 16,
-        marginBottom: 16,
-        color: "#DDDDDD"
     },
     footer: {
         flexDirection: "row"
